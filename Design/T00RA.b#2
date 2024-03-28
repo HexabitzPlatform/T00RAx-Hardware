@@ -113,6 +113,16 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="145" name="DrillLegend_01-02" color="7" fill="1" visible="no" active="yes"/>
 <layer number="146" name="DrillLegend_01-15" color="7" fill="1" visible="no" active="yes"/>
@@ -126,6 +136,14 @@
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="165" name="165bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="15" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="25" fill="1" visible="no" active="yes"/>
@@ -171,10 +189,10 @@
 </layers>
 <board>
 <plain>
-<text x="43.2818" y="26.2546" size="1.016" layer="21" font="vector" rot="R180" align="center">3V3</text>
-<text x="43.2818" y="26.2546" size="1.016" layer="22" font="vector" rot="MR0" align="center">GND</text>
-<text x="21.387" y="26.2722" size="1.016" layer="21" font="vector" rot="R180" align="center">3V3</text>
-<text x="21.387" y="26.2722" size="1.016" layer="22" font="vector" rot="MR0" align="center">GND</text>
+<text x="42.67804375" y="26.3871875" size="1.016" layer="21" font="vector" rot="R180" align="center">3V3</text>
+<text x="42.610221875" y="26.34299375" size="1.016" layer="22" font="vector" rot="MR0" align="center">GND</text>
+<text x="22.093628125" y="26.28693125" size="1.016" layer="21" font="vector" rot="R180" align="center">3V3</text>
+<text x="22.1116625" y="26.30750625" size="1.016" layer="22" font="vector" rot="MR0" align="center">GND</text>
 <text x="38.64711875" y="26.3438625" size="1.27" layer="21">P1</text>
 <text x="24.585678125" y="26.341828125" size="1.27" layer="21">P6</text>
 <text x="26.3613875" y="26.349703125" size="1.27" layer="22" rot="MR0">P6</text>
@@ -187,67 +205,67 @@
 <text x="33.372296875" y="30.676340625" size="0.8128" layer="26" rot="MR270">P1U</text>
 <text x="30.395871875" y="31.94681875" size="0.8128" layer="21" font="vector" align="center">3V3</text>
 <text x="34.274196875" y="31.905590625" size="0.8128" layer="22" font="vector" rot="MR0" align="center">GND</text>
-<text x="29.704028125" y="27.519890625" size="1.016" layer="26" rot="MR180">T00RA0</text>
+<text x="29.704028125" y="27.519890625" size="1.016" layer="26" rot="MR180">T00RA1</text>
 </plain>
 <libraries>
-<library name="hexabitz_connectors">
+<library name="hexabitz_connectors" urn="urn:adsk.eagle:library:20064578">
 <packages>
-<package name="HEXABIT_17.32_TRIG_P1_P6">
+<package name="HEXABIT_17.32_TRIG_P1_P6" urn="urn:adsk.eagle:footprint:20064585/1" locally_modified="yes" library_version="35" library_locally_modified="yes">
 <wire x1="15.008975" y1="0" x2="0.00919375" y2="8.660375" width="0.1" layer="20"/>
 <wire x1="0.00919375" y1="8.660375" x2="-14.9903625" y2="0.000378125" width="0.1" layer="20"/>
 <wire x1="-14.9903625" y1="0.000378125" x2="15.008975" y2="0" width="0.1" layer="20"/>
 <smd name="PAD_PU7" x="0.007784375" y="7.86281875" dx="1" dy="1" layer="1" roundness="100" rot="R30" cream="no"/>
-<polygon width="0.1" layer="1">
-<vertex x="1.65691875" y="7.706434375" curve="-120"/>
-<vertex x="-1.63625625" y="7.710375"/>
-<vertex x="0.00919375" y="8.660375"/>
-</polygon>
 <smd name="PAD_PD7" x="0.007784375" y="7.86281875" dx="1" dy="1" layer="16" roundness="100" rot="R30" cream="no"/>
-<polygon width="0.1" layer="16">
-<vertex x="1.65691875" y="7.706434375" curve="-120"/>
-<vertex x="-1.63625625" y="7.710375"/>
-<vertex x="0.00919375" y="8.660375"/>
-</polygon>
-<smd name="PAD_PU8" x="13.47479375" y="0.400521875" dx="0.6096" dy="0.6096" layer="1" roundness="100" rot="R30" stop="no" cream="no"/>
-<polygon width="0.1" layer="1">
-<vertex x="13.36125" y="0.9539375" curve="30"/>
-<vertex x="13.117859375" y="0"/>
-<vertex x="15.008975" y="0"/>
-</polygon>
+<smd name="PAD_PU8" x="13.31604375" y="0.400521875" dx="0.6096" dy="0.6096" layer="1" roundness="100" rot="R30" stop="no" cream="no"/>
 <smd name="PAD_PD8" x="13.484090625" y="0.416625" dx="0.6096" dy="0.6096" layer="16" roundness="100" rot="R30" stop="no" cream="no"/>
+<smd name="PAD_PU12" x="-13.460753125" y="0.415621875" dx="0.6096" dy="0.6096" layer="1" roundness="100" rot="R30" stop="no" cream="no"/>
+<smd name="PAD_PD12" x="-13.460753125" y="0.415621875" dx="0.6096" dy="0.6096" layer="16" roundness="100" rot="R30" stop="no" cream="no"/>
+<smd name="PAD_PU1" x="7.16446875" y="3.727078125" dx="1" dy="1" layer="1" roundness="100" rot="R30" cream="no"/>
+<smd name="PAD_PD1" x="7.16446875" y="3.727078125" dx="1" dy="1" layer="16" roundness="100" rot="R30" cream="no"/>
+<smd name="PAD_PU6" x="-7.145584375" y="3.73281875" dx="1" dy="1" layer="1" roundness="100" rot="R30" cream="no"/>
+<smd name="PAD_PD6" x="-7.145584375" y="3.73281875" dx="1" dy="1" layer="16" roundness="100" rot="R30" cream="no"/>
+<polygon width="0.1" layer="1">
+<vertex x="1.65691875" y="7.706434375" curve="-120"/>
+<vertex x="-1.63625625" y="7.710375"/>
+<vertex x="0.00919375" y="8.660375"/>
+</polygon>
 <polygon width="0.1" layer="16">
-<vertex x="13.36125" y="0.9539375" curve="30"/>
-<vertex x="13.117859375" y="0"/>
+<vertex x="1.65691875" y="7.706434375" curve="-120"/>
+<vertex x="-1.63625625" y="7.710375"/>
+<vertex x="0.00919375" y="8.660375"/>
+</polygon>
+<polygon width="0.1" layer="1">
+<vertex x="12.25" y="1.5889375" curve="30"/>
+<vertex x="11.847859375" y="0"/>
 <vertex x="15.008975" y="0"/>
 </polygon>
-<smd name="PAD_PU12" x="-13.460753125" y="0.415621875" dx="0.6096" dy="0.6096" layer="1" roundness="100" rot="R30" stop="no" cream="no"/>
-<polygon width="0.1" layer="1">
-<vertex x="-13.344915625" y="0.950375" curve="-30"/>
-<vertex x="-13.0830875" y="0.0014375"/>
-<vertex x="-14.9903625" y="0"/>
-</polygon>
-<smd name="PAD_PD12" x="-13.460753125" y="0.415621875" dx="0.6096" dy="0.6096" layer="16" roundness="100" rot="R30" stop="no" cream="no"/>
 <polygon width="0.1" layer="16">
-<vertex x="-13.344915625" y="0.950375" curve="-30"/>
-<vertex x="-13.0830875" y="0"/>
+<vertex x="12.25" y="1.5889375" curve="30"/>
+<vertex x="11.847859375" y="0"/>
+<vertex x="15.008975" y="0"/>
+</polygon>
+<polygon width="0.1" layer="1">
+<vertex x="-12.233665625" y="1.585375" curve="-30"/>
+<vertex x="-11.8130875" y="0.0014375"/>
 <vertex x="-14.9903625" y="0"/>
 </polygon>
-<smd name="PAD_PU1" x="7.16446875" y="3.727078125" dx="1" dy="1" layer="1" roundness="100" rot="R30" cream="no"/>
+<polygon width="0.1" layer="16">
+<vertex x="-12.233665625" y="1.585375" curve="-30"/>
+<vertex x="-11.8130875" y="0"/>
+<vertex x="-14.9903625" y="0"/>
+</polygon>
 <polygon width="0.1" layer="1">
 <vertex x="8.98020625" y="3.482128125" curve="-180"/>
 <vertex x="6.0379625" y="5.17824375"/>
 </polygon>
-<smd name="PAD_PD1" x="7.16446875" y="3.727078125" dx="1" dy="1" layer="16" roundness="100" rot="R30" cream="no"/>
 <polygon width="0.1" layer="16">
 <vertex x="8.98020625" y="3.482128125" curve="-180"/>
 <vertex x="6.0379625" y="5.17824375"/>
 </polygon>
-<smd name="PAD_PU6" x="-7.145584375" y="3.73281875" dx="1" dy="1" layer="1" roundness="100" rot="R30" cream="no"/>
 <polygon width="0.1" layer="1">
 <vertex x="-6.018340625" y="5.180375" curve="-180"/>
 <vertex x="-8.962825" y="3.480375"/>
 </polygon>
-<smd name="PAD_PD6" x="-7.145584375" y="3.73281875" dx="1" dy="1" layer="16" roundness="100" rot="R30" cream="no"/>
 <polygon width="0.1" layer="16">
 <vertex x="-6.018340625" y="5.180375" curve="-180"/>
 <vertex x="-8.962825" y="3.480375"/>
@@ -258,13 +276,13 @@
 <vertex x="0.00919375" y="8.660375"/>
 </polygon>
 <polygon width="0.1" layer="30">
-<vertex x="13.36125" y="0.9539375" curve="30"/>
-<vertex x="13.117859375" y="-0.004234375"/>
+<vertex x="12.25" y="1.5889375" curve="30"/>
+<vertex x="11.847859375" y="-0.004234375"/>
 <vertex x="15.008975" y="0"/>
 </polygon>
 <polygon width="0.1" layer="30">
-<vertex x="-13.344915625" y="0.950375" curve="-30"/>
-<vertex x="-13.0830875" y="0.0014375"/>
+<vertex x="-12.233665625" y="1.585375" curve="-30"/>
+<vertex x="-11.8130875" y="0.0014375"/>
 <vertex x="-14.9903625" y="0.000378125"/>
 </polygon>
 <polygon width="0.1" layer="30">
@@ -281,13 +299,13 @@
 <vertex x="0.00919375" y="8.660375"/>
 </polygon>
 <polygon width="0.1" layer="29">
-<vertex x="13.36125" y="0.9539375" curve="30"/>
-<vertex x="13.117859375" y="-0.004234375"/>
+<vertex x="12.25" y="1.5889375" curve="30"/>
+<vertex x="11.847859375" y="-0.004234375"/>
 <vertex x="15.008975" y="0"/>
 </polygon>
 <polygon width="0.1" layer="29">
-<vertex x="-13.344915625" y="0.950375" curve="-30"/>
-<vertex x="-13.0830875" y="0.0014375"/>
+<vertex x="-12.233665625" y="1.585375" curve="-30"/>
+<vertex x="-11.8130875" y="0.0014375"/>
 <vertex x="-14.9903625" y="0.000378125"/>
 </polygon>
 <polygon width="0.1" layer="29">
@@ -300,6 +318,13 @@
 </polygon>
 </package>
 </packages>
+<packages3d>
+<package3d name="HEXABIT_17.32_TRIG_P1_P6" urn="urn:adsk.eagle:package:20064639/2" type="empty" library_version="35" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="HEXABIT_17.32_TRIG_P1_P6"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 <library name="HEXABITZ_CONNECTION_PARTS" urn="urn:adsk.eagle:library:20064553">
 <packages>
@@ -377,7 +402,7 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="1mil"/>
+<param name="mdCopperDimension" value="0mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="7mil"/>
@@ -532,7 +557,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="P1" library="hexabitz_connectors" package="HEXABIT_17.32_TRIG_P1_P6" value="HEXABIT_17.32_TRIG_P1_P6" x="32.3596" y="25.4254" smashed="yes"/>
+<element name="P1" library="hexabitz_connectors" library_urn="urn:adsk.eagle:library:20064578" package="HEXABIT_17.32_TRIG_P1_P6" package3d_urn="urn:adsk.eagle:package:20064639/2" value="HEXABIT_17.32_TRIG_P1_P6" x="32.3596" y="25.4254" smashed="yes"/>
 <element name="J1" library="HEXABITZ_CONNECTION_PARTS" library_urn="urn:adsk.eagle:library:20064553" package="JST_SM06B-GHS-TB" package3d_urn="urn:adsk.eagle:package:20064457/3" value="SM06B-GHS-TB" x="32.399225" y="27.044903125" smashed="yes">
 <attribute name="NAME" x="28.64465" y="26.395615625" size="1.016" layer="25"/>
 </element>
@@ -629,24 +654,6 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="4,1,c9d25ee550dd3c09"/>
-<approved hash="4,1,ce80c25c61e0ec99"/>
-<approved hash="4,1,5f8e6d4a601a285d"/>
-<approved hash="4,1,c70d415edf4fbbc0"/>
-<approved hash="4,1,1513a60d5c5774b8"/>
-<approved hash="4,1,ec06f8e236acc9b1"/>
-<approved hash="4,1,db7dddb1a49e6577"/>
-<approved hash="4,1,209b1d1c37008690"/>
-<approved hash="4,16,c9d25ee550dd3c09"/>
-<approved hash="4,16,5f8e6d4a601a285d"/>
-<approved hash="4,16,c70d415edf4fbbc0"/>
-<approved hash="4,16,1513a60d5c5774b8"/>
-<approved hash="4,16,ce80c25c61e0ec99"/>
-<approved hash="4,16,db7dddb1a49e6577"/>
-<approved hash="4,16,48e9727efafbb352"/>
-<approved hash="4,16,600b2ab3745511b0"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
